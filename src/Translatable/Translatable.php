@@ -225,7 +225,7 @@ trait Translatable
      */
     protected function getTranslationOrNew($locale)
     {
-        if (($translation = $this->getTranslation($locale, false)) === null) {
+        if (($translation = $this->getTranslation($locale, true)) === null) {
             $translation = $this->getNewTranslation($locale);
         }
 
